@@ -77,7 +77,7 @@ The supported item types are:
 Each item type has multiple parameters. Default parameters can be set in `default_[type]`.
 
 ## Parameters of item types
-### `text`
+### text
 - `font`: the file name of font file (support system fonts or custom fonts)
 - `color`: supports color names (like "`black`") or HTML color codes
 - `position`
@@ -88,15 +88,15 @@ Each item type has multiple parameters. Default parameters can be set in `defaul
 - `vertical_align`: valid values are "`top`", "`center`" and "`bottom`"
 - `offset`: vertical offset of text; its value should be float number between 0 and 1
 
-### `colortext`
+### colortext
 The same as `text`, without the `color` parameter.
 
-### `vertitext`
+### vertitext
 Nearly the same as `text`, without the `color` parameter.
 The `vertitext` type has a new parameter:
 - `space`: controls the space of each two characters
 
-### `doubletext`
+### doubletext
 Nearly the same as `text` with some new parameters:
 - `horizontal_align_right` (`horizontal_align` controls the left side)
 - `minimum_diff`: minimum difference of sizes of both sides
@@ -104,15 +104,15 @@ Nearly the same as `text` with some new parameters:
 - `prior`: controls which side can be larger - `0` for the left side, `1` for the right side
 - `space`: controls the space of two sides of text
 
-### `doubletext_nl`
+### doubletext_nl
 Nearly the same as `text` with some new parameters:
 - `horizontal_align_down` (`horizontal_align` controls the upper side)
 - `space`: controls the space of two sides of text
 
-### `figure`
-- keep_aspect_ratio: 0 for not keeping the aspect ratio, 1 for keeping it
-- position: [0,0] is the top-left cornor
-- width
-- height
-- horizontal_align
-- vertical_align
+### figure
+- `keep_aspect_ratio`: `0` for not keeping the aspect ratio, `1` for keeping it
+- `position`: `[0,0]` is the top-left cornor
+- `width`
+- `height`
+- `horizontal_align`
+- `vertical_align`
